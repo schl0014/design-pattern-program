@@ -4,15 +4,13 @@ public interface MouseState {
 
     void InsertBattery();
 
+    void BatteryFull();
+
+    void BatteryEmpty();
 
 
-    void on();
 
-    void off();
 
-    void broken();
 
-    void idle();
 
-    void fixed();
 }
