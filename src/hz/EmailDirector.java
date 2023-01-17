@@ -13,8 +13,8 @@ public class EmailDirector {
     public String makeEmailApplyForInternship() {
         _builder.reset();
         _builder.addressAMadam("Els");
-        _builder.talkAboutMe("<Set-Name>", "<Set-University>");
-        _builder.showInterest("<Set-Company>");
+        _builder.talkAboutMe("tim", "HZ");
+        _builder.showInterest("Goldi");
         _builder.tellHowToContactMe();
         _builder.sayThanks();
 

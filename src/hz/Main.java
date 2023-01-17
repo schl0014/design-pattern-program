@@ -7,7 +7,7 @@ public class Main {
         ConsoleWriter writer = new ConsoleWriter();
 
         // Let's construct an email
-        EnglishEmailBuilder builder = new EnglishEmailBuilder();
+        DutchEmailBuilder builder = new DutchEmailBuilder();
 
         EmailDirector director = new EmailDirector(builder);
 
