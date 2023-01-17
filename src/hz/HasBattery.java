@@ -1,4 +1,4 @@
-public class HasBattery implements  MouseState{
+public class HasBattery implements MouseState{
     @Override
     public void RemoveBattery() {
         System.out.println("You have removed the battery");
