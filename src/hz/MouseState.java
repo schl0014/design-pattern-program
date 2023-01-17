@@ -1,6 +1,6 @@
 public interface MouseState {
 
-    void Removebattery();
+    void RemoveBattery();
 
     void InsertBattery();
 
