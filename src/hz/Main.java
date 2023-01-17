@@ -4,10 +4,13 @@ public class Main {
         //
         ConsoleWriter writer = new ConsoleWriter();
         // Let's construct an email
-        EnglishEmailBuilder builder = new EnglishEmailBuilder();
-        EmailDirector director = new EmailDirector(builder);
-        director.ChangeBuilder(new WireLessMouse());
-        String email = director.makeEmailApplyForInternship();
-        writer.writeLine(email);
+        WiredMouse builder = new WiredMouse();
+
+        MouseDirector director = new MouseDirector(builder);
+
+        director.ChangeBuilder(new WiredMouse());
+
+        String mouse = director.makeMouseInstruction();
+        writer.writeLine(mouse);
     }
 }

@@ -1,25 +1,25 @@
-public class WireLessMouse implements MouseBuilder {
+public class WiredMouse implements MouseBuilder {
 
     private String _mouse = "";
 
     public void ClickRate() {
-        _mouse += "ga naar settings en verhoog " ;
+        _mouse += "ga naar settings en klik " ;
         this.addNewLine();
     }
 
     public void Troubleshooting() {
 
-        _mouse += "ga naar settings en klik op troubleshoot " ;
+        _mouse += "ga naar settings en " ;
         this.addNewLine();
     }
 
     public void RgbLight() {
-        _mouse += "GA naar de settings ga naar lights";
+        _mouse += "GA naar de settings";
         this.addNewLine();
     }
 
     public void HowToStore() {
-        _mouse += "Rol het goed opj";
+        _mouse += "Rol het goed op man";
         this.addNewLine();
     }
 
