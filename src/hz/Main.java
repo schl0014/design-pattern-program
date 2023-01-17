@@ -1,20 +1,13 @@
 
 public class Main {
-
     public static void main(String[] args) {
-
         //
         ConsoleWriter writer = new ConsoleWriter();
-
         // Let's construct an email
-        DutchEmailBuilder builder = new DutchEmailBuilder();
-
+        EnglishEmailBuilder builder = new EnglishEmailBuilder();
         EmailDirector director = new EmailDirector(builder);
-
-        director.ChangeBuilder(new DutchEmailBuilder());
-
+        director.ChangeBuilder(new WireLessMouse());
         String email = director.makeEmailApplyForInternship();
-
         writer.writeLine(email);
     }
 }

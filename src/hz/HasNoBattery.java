@@ -20,6 +20,6 @@ public class HasNoBattery implements MouseState {
     public void BatteryEmpty() {
         System.out.println("Your have no battery");
     }
-    
+
 }
 
