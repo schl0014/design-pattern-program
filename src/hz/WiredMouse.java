@@ -19,7 +19,7 @@ public class WiredMouse implements MouseBuilder {
     }
 
     public void HowToStore() {
-        _mouse += "Rol het goed op man";
+        _mouse += "Rol het goede op man en ruim het op";
         this.addNewLine();
     }
 
