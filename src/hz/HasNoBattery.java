@@ -1,5 +1,9 @@
 public class HasNoBattery implements MouseState {
+    Mouse mouse;
 
+    public HasNoBattery(Mouse mouse) {
+        this.mouse = mouse;
+    }
 
     @Override
     public void RemoveBattery() {

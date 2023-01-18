@@ -6,10 +6,12 @@ public class Mouse {
     MouseState state;
 
     public Mouse(){
-        HasBattery = new HasBattery();
-        HasNoBattery = new HasNoBattery();
+        HasBattery = new HasBattery(this);
+        HasNoBattery = new HasNoBattery(this);
     }
-
+    public void setState(){
+        this.state = state;
+    }
     public MouseState getState(){
         return state;
     }
@@ -27,5 +29,13 @@ public class Mouse {
 
     public void BatteryEmpty() {
         state.BatteryEmpty();
+    }
+
+    public MouseState getHasBattery() {
+        return HasBattery;
+    }
+
+    public MouseState getHasNoBattery() {
+        return HasBattery;
     }
 }
