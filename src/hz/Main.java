@@ -1,16 +1,7 @@
 
 public class Main {
     public static void main(String[] args) {
-        //
-        ConsoleWriter writer = new ConsoleWriter();
-        // Let's construct an email
-        WiredMouse builder = new WiredMouse();
-
-        MouseDirector director = new MouseDirector(builder);
-
-        director.ChangeBuilder(new WiredMouse());
-
-        String mouse = director.makeMouseInstruction();
-        writer.writeLine(mouse);
+        MouseFacade facade = new MouseFacade();
+        facade.createMouseInstruction();
     }
 }
