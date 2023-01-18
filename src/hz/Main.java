@@ -8,7 +8,7 @@ public class Main {
 
         MouseDirector director = new MouseDirector(builder);
 
-        director.ChangeBuilder(new WiredMouse());
+        director.ChangeBuilder(new WireLessMouse());
 
         String mouse = director.makeMouseInstruction();
         writer.writeLine(mouse);
