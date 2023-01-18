@@ -5,15 +5,10 @@ public class WiredMouse implements MouseBuilder {
 
     public void ClickRate() {
         _mouse += "Ga naar de settings van de muis en daar kan je de clickrate aanpassen. ";
+    }
 
-        @Override
-        public void ConnectToPC () {
+        public void ConnectToPC() {
             _mouse += "pak de usb kabel en plug het in de computer";
-            this.addNewLine();
-        }
-
-        public void ClickRate () {
-            _mouse += "ga naar settings en klik ";
             this.addNewLine();
         }
 
