@@ -2,24 +2,26 @@ public class WiredMouse implements MouseBuilder {
 
     private String _mouse = "";
 
+
+
     public void ClickRate() {
-        _mouse += "ga naar settings en klik " ;
+        _mouse += "Ga naar de settings van de muis en daar kan je de clickrate aanpassen. " ;
         this.addNewLine();
     }
 
     public void Troubleshooting() {
 
-        _mouse += "ga naar settings en " ;
+        _mouse += " Je kan de USB kabel eruit halen en kijken of hij schoon is. Je kan kan ook kijken of the USB port schoon is" ;
         this.addNewLine();
     }
 
     public void RgbLight() {
-        _mouse += "GA naar de settings";
+        _mouse += "Ga naar de settings van de muis";
         this.addNewLine();
     }
 
     public void HowToStore() {
-        _mouse += "Rol het goede op man en ruim het op";
+        _mouse += "Rol het draad goed zodat het niet beschadigd op en berg het op in een veilige plek";
         this.addNewLine();
     }
 
