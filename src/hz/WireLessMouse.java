@@ -1,25 +1,35 @@
 public class WireLessMouse implements MouseBuilder {
 
-    private String _mouse = "";
+    private String _mouse;
+
+    @Override
+    public void ConnectToPC() {
+        _mouse += " zoek naar het bluetooth symbooltje zet dit aan. Zoek op je computer naar de bluetotoh functie en connect met je muis" ;
+        this.addNewLine();
+    }
 
     public void ClickRate() {
-        _mouse += "ga naar settings en verhoog " ;
+        _mouse += "clikc een keer op de knop bij de scrollwiel.Dit verhoogt de clickrate met 1 " ;
         this.addNewLine();
     }
 
     public void Troubleshooting() {
 
-        _mouse += "ga naar settings en klik op troubleshoot " ;
+        _mouse += "schakel je muis uit." ;
+        this.addNewLine();
+        _mouse +="Verwijder de bleutooth verbinding met de muis.";
+        this.addNewLine();
+        _mouse +="probeer dan te muis weer te connecten als dit niet werkt update de bluetooth drivers ";
         this.addNewLine();
     }
 
     public void RgbLight() {
-        _mouse += "GA naar de settings ga naar lights";
+        _mouse += "draai je muis om en zoek naat het licht symbooltje . Druk deze aan";
         this.addNewLine();
     }
 
     public void HowToStore() {
-        _mouse += "Rol het goed opj";
+        _mouse += "het beste is om de muis in een apart vakje in je tas te stop zodat het niet beschadigd raakt in je tas";
         this.addNewLine();
     }
 

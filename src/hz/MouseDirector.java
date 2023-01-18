@@ -12,6 +12,7 @@ public class MouseDirector {
 
     public String makeMouseInstruction() {
         _builder.reset();
+        _builder.ConnectToPC();
         _builder.ClickRate();
         _builder.Troubleshooting();
         _builder.HowToStore();

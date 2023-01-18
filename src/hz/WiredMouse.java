@@ -2,14 +2,20 @@ public class WiredMouse implements MouseBuilder {
 
     private String _mouse = "";
 
+    @Override
+    public void ConnectToPC() {
+        _mouse += "pak de usb kabel en plug het in de computer";
+        this.addNewLine();
+    }
+
     public void ClickRate() {
-        _mouse += "ga naar settings en klik " ;
+        _mouse += "ga naar settings en klik ";
         this.addNewLine();
     }
 
     public void Troubleshooting() {
 
-        _mouse += "ga naar settings en " ;
+        _mouse += "ga naar settings en ";
         this.addNewLine();
     }
 
@@ -24,11 +30,9 @@ public class WiredMouse implements MouseBuilder {
     }
 
 
-
     public void reset() {
         _mouse = "";
     }
-
 
 
     public String getMouse() {

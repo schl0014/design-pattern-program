@@ -9,8 +9,4 @@ public interface MouseState {
     void BatteryEmpty();
 
 
-
-
-
-
 }

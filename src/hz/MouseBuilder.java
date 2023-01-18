@@ -1,5 +1,6 @@
 public interface MouseBuilder {
 
+    void ConnectToPC();
 
     void ClickRate();
 
@@ -9,9 +10,6 @@ public interface MouseBuilder {
     void RgbLight();
 
     void HowToStore();
-
-
-
 
 
     void reset();
