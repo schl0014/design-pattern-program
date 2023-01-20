@@ -8,11 +8,13 @@ public class HasBattery implements MouseState {
     @Override
     public void RemoveBattery() {
         System.out.println("You have removed the battery");
+        mouse.setState(mouse.getHasNoBattery());
     }
 
     @Override
     public void InsertBattery() {
-        System.out.println("don't do that battery is still good");
+        System.out.println("don't do that the battery is still good");
+
     }
 
     @Override
@@ -24,5 +26,16 @@ public class HasBattery implements MouseState {
     public void BatteryEmpty() {
         System.out.println("battery is empty change the battery");
         mouse.setState(mouse.getHasNoBattery());
+    }
+
+    @Override
+    public void BatteryUsages() {
+        mouse.decreaseBattery();
+        System.out.println("batterypercentage"+mouse.getBatteryPercentage());
+        if (mouse.getBatteryPercentage() < 25) {
+           BatteryEmpty();
+        }
+
+
     }
 }

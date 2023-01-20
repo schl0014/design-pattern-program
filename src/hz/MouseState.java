@@ -8,5 +8,7 @@ public interface MouseState {
 
     void BatteryEmpty();
 
+    void BatteryUsages();
+
 
 }

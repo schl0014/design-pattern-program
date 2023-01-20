@@ -26,5 +26,10 @@ public class HasNoBattery implements MouseState {
         System.out.println("Your have no battery");
     }
 
+    @Override
+    public void BatteryUsages() {
+        System.out.println("Your have no battery");
+    }
+
 }
 

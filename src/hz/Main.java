@@ -5,14 +5,19 @@ public class Main {
         facade.createMouseInstruction();
 
         Mouse mouse = new Mouse(100);
-
+        mouse.BatteryUsages();
+        mouse.BatteryUsages();
+        mouse.BatteryUsages();
+        mouse.BatteryUsages();
         mouse.BatteryFull();
-        mouse.InsertBattery();
-        mouse.BatteryEmpty();
         mouse.RemoveBattery();
-//        while(mouse.getCount() > 0) {
-//            mouse.decreaseCount();
-//        }
+        mouse.InsertBattery();
+//        mouse.BatteryFull();
+
+//        mouse.BatteryEmpty();
+
+
+
 
 
 
