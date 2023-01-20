@@ -1,12 +1,12 @@
-public class ConvertTextToBuilderClass {
-    public String[] _BooleanAdapter = {"wired,wireless"};
-    public String[] _LIstWithActions = {"instructions"};
-    String bad = "Bad answer fill in a valid answer";
+public class ConvertTextToFacadeClass {
+    public String[] _ListWithSortOfComputerMouses = {"wired,wireless"};
+
+    String _answerBad = "Bad answer fill in a valid answer";
     ConsoleWriter writer = new ConsoleWriter();
     private MouseFacade facade;
 
-    public MouseFacade ConvertTextToBuilderClass(String answer) {
-        for (String s : _BooleanAdapter) {
+    public MouseFacade ConvertTextToFacade(String answer) {
+        for (String s : _ListWithSortOfComputerMouses) {
             if (answer.equals("wired")) {
                  facade = new MouseFacade(new WiredMouse());
                 break;
@@ -14,7 +14,7 @@ public class ConvertTextToBuilderClass {
                  facade = new MouseFacade(new WireLessMouse());
                 break;
             } else {
-                writer.writeLine(bad);
+                writer.writeLine(_answerBad);
                 break;
             }
         }
