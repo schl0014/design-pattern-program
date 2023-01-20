@@ -12,7 +12,7 @@ public class MouseFacade {
     private final Radio radio;
     private final WebCam webCam;
 
-    private  Mouse mouse;
+    private final Mouse mouse;
 
     public MouseFacade(MouseBuilder answer) {
         this.clickRateMouse = new ClickRateMouse();
@@ -36,14 +36,20 @@ public class MouseFacade {
         writer.writeLine(mouse);
     }
 
-    public void Gaming(){
+    public void Gaming() {
         this.computer.on();
         this.mouse.BatteryUsages();
         this.monitor.on();
         this.clickRateMouse.up(10);
         this.headPhones.on();
         this.headPhones.connection();
-        
+        this.computer.gaming();
+        this.mouse.BatteryUsages();
+        this.mouse.BatteryUsages();
+        this.mouse.BatteryUsages();
+        this.mouse.RemoveBattery();
+        this.mouse.InsertBattery();
+        this.mouse.RemoveBattery();
 
     }
 
