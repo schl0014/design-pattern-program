@@ -31,9 +31,9 @@ public class HasBattery implements MouseState {
     @Override
     public void BatteryUsages() {
         mouse.decreaseBattery();
-        System.out.println("batterypercentage"+mouse.getBatteryPercentage());
+        System.out.println("batterypercentage" + mouse.getBatteryPercentage());
         if (mouse.getBatteryPercentage() < 25) {
-           BatteryEmpty();
+            BatteryEmpty();
         }
 
 

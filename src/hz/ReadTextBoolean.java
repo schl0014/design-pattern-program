@@ -1,27 +1,24 @@
-
-
-
 public class ReadTextBoolean {
-    private String _answers;
     public String[] _BooleanAdapter = {"wired,wireless"};
+    public String[] _LIstWithActions = {"instructions"};
+    String bad = "Bad answer fill in a valid answer";
+    ConsoleWriter writer = new ConsoleWriter();
+    private MouseFacade facade;
 
-
-
-    public String ConvertTextToBoolean(String answer){
+    public MouseFacade ConvertTextToFacade(String answer) {
         for (String s : _BooleanAdapter) {
             if (answer.equals("wired")) {
-                _answers = "wired";
+                MouseFacade facade = new MouseFacade(new WiredMouse());
                 break;
             } else if (answer.equals("wireless")) {
-                _answers = "wireless";
+                MouseFacade facade = new MouseFacade(new WireLessMouse());
                 break;
             } else {
-                _answers = s;
+                writer.writeLine(bad);
+                break;
             }
-
         }
-
-
-        return _answers;
+        return facade;
     }
+
 }

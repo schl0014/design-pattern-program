@@ -25,25 +25,25 @@ public class Main {
 //        writer.write();
 
         // read response
-        String ans1 = booleanAdapter.ConvertTextToBoolean(reader.readLine());
-        String ans2 = booleanAdapter.ConvertTextToBoolean(reader.readLine());
+        MouseFacade facade = booleanAdapter.ConvertTextToFacade(reader.readLine());
+        writer.writeLine(q2);
+        String ans2 = reader.readLine();
 //        booleanAdapter.ConvertTextToBoolean(reader.readLine());
 
         //TODO
         // the reader should accept the following values as true:
         // "true", "yes", "oh yeah", "great", "sure", "love to", "of course", "always", "never done otherwise"
 
-        if (ans1.equals("wired")) {
-            MouseFacade facade = new MouseFacade(new WiredMouse());
-        } else if (ans1.equals("wireless")) {
-            MouseFacade facade = new MouseFacade(new WireLessMouse());
+
+
+
+        if (ans2.equals("instructions")) {
+            facade.createMouseInstruction();
+        } else if (ans2.equals("wireless")) {
+
         } else {
             writer.writeLine(bad);
         }
-
-        writer.writeLine(q2);
-
-
 
         // allow user to read our response
         reader.readLine();
