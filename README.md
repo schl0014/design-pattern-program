@@ -9,4 +9,17 @@ De eerste vraag die maakt gebruik van een adapter die de tekst omzet in een faca
 Als je bij de tweede vraag gaming beantwoord. Dan wordt in de facade een hele reeks aan handelingen uitvoerdt die te maken hebben om te kunnen gamen. ALs je aan het gamen met gaat je muis langzamerhand ook leeg waardoor de state van je muis veranterd dit is te zien als je functie wordt aangeroepen.
 ![image](https://user-images.githubusercontent.com/90184159/213722614-953ca748-f544-4a4b-ba22-181b0c0dd77d.png)
 ![image](https://user-images.githubusercontent.com/90184159/213722751-965a7b0b-8b89-4bca-803e-f13fa2c145be.png)
+![image](https://user-images.githubusercontent.com/90184159/213722962-d0c95a46-6566-4715-bf02-c7393e35ba2b.png)
+![image](https://user-images.githubusercontent.com/90184159/213723121-d7ff8e19-e4e3-4ac1-91df-9122caad8d98.png)
+In ons programma zijn er meerder facade methodes met elk zijn eigen handelingen, die worden aangeroepen. Bijvoorbeeld de microfoon en computer, zoals je in de screenschots hierboven ziet.
 
+Wij hebben ook een builder gebruikt met een factory method. In combinatie met de MouseBuilder en MouseDirector zijn de WirelessMouse en WiredMouse met elkaar verbonden.
+
+De MouseFacade staan de aanroeping van verschillende states en de builder
+
+De creational patterns: Builder en Factory
+De structual patterns: adapter en facade
+De behavioral patterns: State
+
+# Samenwerking
+Wij hebben heel het project pairprogramming gebruikt. Daardoor is de samenstelling gelijk en het ene moment ging een persoon typen en andere meekijken en ideeën bedenken en om de zoveel tijd verwisselde wij van rol.
