@@ -19,6 +19,7 @@ public class Mouse {
         }
 
     }
+
 //    public void decreaseCount() {
 //        count--;
 //        if (count == 0) {
@@ -28,6 +29,7 @@ public class Mouse {
     public int getCount() {
         return count;
     }
+
 
     public void setState(MouseState state){
         this.state = state;

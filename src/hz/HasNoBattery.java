@@ -13,6 +13,7 @@ public class HasNoBattery implements MouseState {
     @Override
     public void InsertBattery() {
         System.out.println("You have inserted the battery");
+        mouse.setState(mouse.getHasBattery());
     }
 
     @Override
