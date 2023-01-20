@@ -1,11 +1,11 @@
-public class ReadTextBoolean {
+public class ConvertTextToBuilderClass {
     public String[] _BooleanAdapter = {"wired,wireless"};
     public String[] _LIstWithActions = {"instructions"};
     String bad = "Bad answer fill in a valid answer";
     ConsoleWriter writer = new ConsoleWriter();
     private MouseFacade facade;
 
-    public MouseFacade ConvertTextToFacade(String answer) {
+    public MouseFacade ConvertTextToBuilderClass(String answer) {
         for (String s : _BooleanAdapter) {
             if (answer.equals("wired")) {
                  facade = new MouseFacade(new WiredMouse());
