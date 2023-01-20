@@ -1,31 +1,22 @@
 public class Main {
     public static void main(String[] args) {
-
         ConsoleReader reader = new ConsoleReader();
         ConsoleWriter writer = new ConsoleWriter();
-
-
-        ReadTextBoolean booleanAdapter = new ReadTextBoolean();
-
-
+        ConvertTextToBuilderClass builderAdapter = new ConvertTextToBuilderClass();
         // ask questions
         String q1 = "What mouse do you have";
 
         String q2 = "What functions do you want use:" + "Get instructions";
         String good = "You healthy person!";
         String bad = "Bad answer fill in a valid answer";
-        MouseFacade facade;
+        MouseFacade builder;
         // ask question to user
         writer.writeLine(q1);
 
-
-//        writer.write();
-
         // read response
-        facade = booleanAdapter.ConvertTextToFacade(reader.readLine());
+        builder = builderAdapter.ConvertTextToBuilderClass(reader.readLine());
         writer.writeLine(q2);
         String ans2 = reader.readLine();
-//        booleanAdapter.ConvertTextToBoolean(reader.readLine());
 
         //TODO
         // the reader should accept the following values as true:
@@ -33,7 +24,7 @@ public class Main {
 
 
         if (ans2.equals("instructions")) {
-            facade.createMouseInstruction();
+            builder.createMouseInstruction();
         } else if (ans2.equals("wireless")) {
 
         } else {
@@ -43,7 +34,7 @@ public class Main {
         // allow user to read our response
         reader.readLine();
 
-//        facade.createMouseInstruction();
+//        builder.createMouseInstruction();
 //
 //        Mouse mouse = new Mouse(100);
 //        mouse.BatteryUsages();
