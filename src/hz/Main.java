@@ -4,12 +4,15 @@ public class Main {
         MouseFacade facade = new MouseFacade();
         facade.createMouseInstruction();
 
-        Mouse mouse = new Mouse();
+        Mouse mouse = new Mouse(100);
 
         mouse.BatteryFull();
         mouse.InsertBattery();
         mouse.BatteryEmpty();
         mouse.RemoveBattery();
+//        while(mouse.getCount() > 0) {
+//            mouse.decreaseCount();
+//        }
 
 
 
