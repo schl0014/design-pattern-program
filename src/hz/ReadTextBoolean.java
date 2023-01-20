@@ -8,10 +8,10 @@ public class ReadTextBoolean {
     public MouseFacade ConvertTextToFacade(String answer) {
         for (String s : _BooleanAdapter) {
             if (answer.equals("wired")) {
-                MouseFacade facade = new MouseFacade(new WiredMouse());
+                 facade = new MouseFacade(new WiredMouse());
                 break;
             } else if (answer.equals("wireless")) {
-                MouseFacade facade = new MouseFacade(new WireLessMouse());
+                 facade = new MouseFacade(new WireLessMouse());
                 break;
             } else {
                 writer.writeLine(bad);

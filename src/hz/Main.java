@@ -5,19 +5,16 @@ public class Main {
         ConsoleWriter writer = new ConsoleWriter();
 
 
-
         ReadTextBoolean booleanAdapter = new ReadTextBoolean();
-
 
 
         // ask questions
         String q1 = "What mouse do you have";
 
-        String q2 = "What functions do you want use:" +
-                "Get instructions";
+        String q2 = "What functions do you want use:" + "Get instructions";
         String good = "You healthy person!";
         String bad = "Bad answer fill in a valid answer";
-
+        MouseFacade facade;
         // ask question to user
         writer.writeLine(q1);
 
@@ -25,7 +22,7 @@ public class Main {
 //        writer.write();
 
         // read response
-        MouseFacade facade = booleanAdapter.ConvertTextToFacade(reader.readLine());
+        facade = booleanAdapter.ConvertTextToFacade(reader.readLine());
         writer.writeLine(q2);
         String ans2 = reader.readLine();
 //        booleanAdapter.ConvertTextToBoolean(reader.readLine());
@@ -33,8 +30,6 @@ public class Main {
         //TODO
         // the reader should accept the following values as true:
         // "true", "yes", "oh yeah", "great", "sure", "love to", "of course", "always", "never done otherwise"
-
-
 
 
         if (ans2.equals("instructions")) {
