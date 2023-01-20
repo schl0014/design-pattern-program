@@ -11,7 +11,7 @@ public class LightsMouse {
     public void lightBrightnessUp(int brightness){
             System.out.println("Brightness increased by"+ brightness);
     }
-    public void lightBrightnesDown(int brightness){
+    public void lightBrightnessDown(int brightness){
         System.out.println("Brightness increased down"+ brightness);
     }
 

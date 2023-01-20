@@ -1,4 +1,4 @@
-public class ClickRate {
+public class ClickRateMouse {
 
 
     public void up(int rate ) {
