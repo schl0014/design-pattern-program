@@ -1,7 +1,6 @@
-public class ClickObjectLeftCorner {
-
+public class ClickObject {
     public void click() {
-        System.out.println("you have clicked on the object in the left");
+        System.out.println("you have clicked on the object in the center");
     }
 
     public void select() {
