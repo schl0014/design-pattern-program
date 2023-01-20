@@ -12,9 +12,6 @@ public class Main {
         mouse.BatteryFull();
         mouse.RemoveBattery();
         mouse.InsertBattery();
-//        mouse.BatteryFull();
-
-//        mouse.BatteryEmpty();
 
 
 
