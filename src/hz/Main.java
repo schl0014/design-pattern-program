@@ -6,7 +6,7 @@ public class Main {
         // ask questions
         String q1 = "What mouse do you have";
 
-        String q2 = "What functions do you want use:" + "Get instructions";
+        String q2 = "What functions do you want use:" + "gaming,"+" first use ?";
         String good = "You healthy person!";
         String bad = "Bad answer fill in a valid answer";
         MouseFacade facade;
@@ -18,10 +18,10 @@ public class Main {
         writer.writeLine(q2);
         String ans2 = reader.readLine();
 
-        if (ans2.equals("instructions")) {
+        if (ans2.equals("first use")) {
             facade.UseMouseTheFirstTime();
-        } else if (ans2.equals("wireless")) {
-
+        } else if (ans2.equals("gaming")) {
+            facade.Gaming();
         } else {
             writer.writeLine(bad);
         }
