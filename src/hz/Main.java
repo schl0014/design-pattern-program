@@ -6,7 +6,7 @@ public class Main {
         // ask questions
         String q1 = "What mouse do you have";
 
-        String q2 = "What functions do you want use:" + "gaming," + " first use ?";
+        String q2 = "What functions do you want use:" + "gaming," + "streaming,"+ "listening to music,"+ "turn off,"+ " first use ?";
         String good = "You healthy person!";
         String bad = "Bad answer fill in a valid answer";
         MouseFacade facade;
@@ -22,23 +22,18 @@ public class Main {
             facade.UseMouseTheFirstTime();
         } else if (ans2.equals("gaming")) {
             facade.Gaming();
-        } else {
+        } else if (ans2.equals("streaming")) {
+            facade.Streaming();
+        }else if (ans2.equals("listening to music")) {
+            facade.ListeningToMusicAndRadio();
+        }else if (ans2.equals("turn off")) {
+            facade.TurnOff();
+        }
             writer.writeLine(bad);
         }
 
         // allow user to read our response
         reader.readLine();
-
-//        facade.UseMouseTheFirstTime();
-//
-//        Mouse mouse = new Mouse(100);
-//        mouse.BatteryUsages();
-//        mouse.BatteryUsages();
-//        mouse.BatteryUsages();
-//        mouse.BatteryUsages();
-//        mouse.BatteryFull();
-//        mouse.RemoveBattery();
-//        mouse.InsertBattery();
 
 
     }
