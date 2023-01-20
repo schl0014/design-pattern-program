@@ -10,7 +10,7 @@ public class Mouse {
         HasNoBattery = new HasNoBattery(this);
         state = HasNoBattery;
     }
-    public void setState(){
+    public void setState(MouseState state){
         this.state = state;
     }
     public MouseState getState(){
