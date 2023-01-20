@@ -19,7 +19,7 @@ public class Main {
         String ans2 = reader.readLine();
 
         if (ans2.equals("instructions")) {
-            facade.createMouseInstruction();
+            facade.UseMouseTheFirstTime();
         } else if (ans2.equals("wireless")) {
 
         } else {
@@ -29,7 +29,7 @@ public class Main {
         // allow user to read our response
         reader.readLine();
 
-//        facade.createMouseInstruction();
+//        facade.UseMouseTheFirstTime();
 //
 //        Mouse mouse = new Mouse(100);
 //        mouse.BatteryUsages();
