@@ -28,7 +28,7 @@ public class Main {
             facade.ListeningToMusicAndRadio();
         }else if (ans2.equals("turn off")) {
             facade.TurnOff();
-        }
+        }else {
             writer.writeLine(bad);
         }
 
