@@ -12,8 +12,5 @@ public class WebCam {
         System.out.println("recording has started");
     }
 
-    public void photos(){
-        System.out.println("picture has been taken");
-    }
 
 }

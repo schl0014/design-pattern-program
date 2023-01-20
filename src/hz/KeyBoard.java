@@ -11,7 +11,4 @@ public class KeyBoard {
             System.out.println("Colors have changed");
     }
 
-    public void brightness(int brightness){
-            System.out.println("Color brightness has changed by"+brightness);
-    }
 }

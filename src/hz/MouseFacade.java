@@ -6,7 +6,6 @@ public class MouseFacade {
     private final Computer computer;
     private final HeadPhones headPhones;
     private final KeyBoard keyBoard;
-    private final LightsMouse lightsMouse;
     private final Microphone microphone;
     private final Monitor monitor;
     private final Radio radio;
@@ -19,7 +18,6 @@ public class MouseFacade {
         this.computer = new Computer();
         this.headPhones = new HeadPhones();
         this.keyBoard = new KeyBoard();
-        this.lightsMouse = new LightsMouse();
         this.microphone = new Microphone();
         this.monitor = new Monitor();
         this.radio = new Radio();
@@ -34,6 +32,9 @@ public class MouseFacade {
         director.ChangeBuilder(this.builder);
         String mouse = director.makeMouseInstruction();
         writer.writeLine(mouse);
+        this.clickRateMouse.down(4);
+        this.mouse.InsertBattery();
+        this.mouse.BatteryEmpty();
     }
 
     public void Gaming() {
@@ -43,6 +44,9 @@ public class MouseFacade {
         this.clickRateMouse.up(10);
         this.headPhones.on();
         this.headPhones.connection();
+        this.keyBoard.colorKeys();
+        this.monitor.BrightnessUp(4);
+        this.keyBoard.hotkeys();
         this.computer.gaming();
         this.mouse.BatteryUsages();
         this.mouse.BatteryUsages();
@@ -50,7 +54,41 @@ public class MouseFacade {
         this.mouse.RemoveBattery();
         this.mouse.InsertBattery();
         this.mouse.RemoveBattery();
+    }
 
+    public void ListeningToMusicAndRadio(){
+        this.headPhones.on();
+        this.headPhones.connection();
+        this.headPhones.VolumeUp(85);
+        this.radio.on();
+        this.radio.setFm();
+        this.radio.VolumeDown(51);
+    }
+
+    public void Streaming(){
+        this.computer.on();
+        this.monitor.on();
+        this.webCam.on();
+        this.keyBoard.typing();
+        this.microphone.on();
+        this.headPhones.on();
+        this.webCam.recording();
+        this.monitor.BrightnessDown(4);
+        this.monitor.Colorpallet();
+        this.headPhones.VolumeUp(4);
+        this.microphone.sensitvity(10);
+        this.computer.gaming();
+        this.radio.setAm();
+    }
+
+    public void TurnOff(){
+        this.radio.off();
+        this.microphone.off();
+        this.headPhones.VolumeDown(10);
+        this.webCam.off();
+        this.headPhones.off();
+        this.computer.off();
+        this.monitor.off();
     }
 
 
