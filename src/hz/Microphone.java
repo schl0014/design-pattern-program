@@ -7,8 +7,8 @@ public class Microphone {
         System.out.println("Microphone is off");
     }
 
-    public void sensitvity(int sensetivity){
-        System.out.println("Sensitvity has changes by"+sensetivity);
+    public void sensitvity(int sensitivity){
+        System.out.println("Sensitvity has changes by"+sensitivity);
     }
 
 }
