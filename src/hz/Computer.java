@@ -22,4 +22,8 @@ public class Computer {
     public void DVDeject(){
         System.out.println("DVD is Eject");
     }
+
+    public void gaming(){
+        System.out.println("You are now playing the game");
+    }
 }
