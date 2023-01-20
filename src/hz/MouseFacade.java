@@ -3,9 +3,9 @@ public class MouseFacade {
     private MouseBuilder builder;
     private MouseDirector director;
 
-    public MouseFacade() {
+    public MouseFacade(MouseBuilder answer) {
         this.writer = new ConsoleWriter();
-        this.builder = new WireLessMouse();
+        this.builder = answer;
         this.director = new MouseDirector(builder);
     }
 
@@ -14,4 +14,6 @@ public class MouseFacade {
         String mouse = director.makeMouseInstruction();
         writer.writeLine(mouse);
     }
+
+
 }
