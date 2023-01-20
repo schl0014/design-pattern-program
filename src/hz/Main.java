@@ -6,7 +6,7 @@ public class Main {
         // ask questions
         String q1 = "What mouse do you have";
 
-        String q2 = "What functions do you want use:" + "gaming,"+" first use ?";
+        String q2 = "What functions do you want use:" + "gaming," + " first use ?";
         String good = "You healthy person!";
         String bad = "Bad answer fill in a valid answer";
         MouseFacade facade;

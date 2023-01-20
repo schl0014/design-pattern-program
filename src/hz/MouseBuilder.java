@@ -5,7 +5,7 @@ public interface MouseBuilder {
     void ClickRate();
 
 
-   void Troubleshooting();
+    void Troubleshooting();
 
     void RgbLight();
 

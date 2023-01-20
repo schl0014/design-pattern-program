@@ -1,14 +1,14 @@
 public class Computer {
 
-    public void on(){
+    public void on() {
         System.out.println("Computer is on");
     }
 
-    public void off(){
+    public void off() {
         System.out.println("Computer is off");
     }
 
-    public void gaming(){
+    public void gaming() {
         System.out.println("You are now playing the game");
     }
 }

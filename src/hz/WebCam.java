@@ -1,14 +1,14 @@
 public class WebCam {
 
-    public void on(){
+    public void on() {
         System.out.println("WebCam is on");
     }
 
-    public void off(){
+    public void off() {
         System.out.println("WebCam is off");
     }
 
-    public void recording(){
+    public void recording() {
         System.out.println("recording has started");
     }
 

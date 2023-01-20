@@ -56,7 +56,7 @@ public class MouseFacade {
         this.mouse.RemoveBattery();
     }
 
-    public void ListeningToMusicAndRadio(){
+    public void ListeningToMusicAndRadio() {
         this.headPhones.on();
         this.headPhones.connection();
         this.headPhones.VolumeUp(85);
@@ -65,7 +65,7 @@ public class MouseFacade {
         this.radio.VolumeDown(51);
     }
 
-    public void Streaming(){
+    public void Streaming() {
         this.computer.on();
         this.monitor.on();
         this.webCam.on();
@@ -81,7 +81,7 @@ public class MouseFacade {
         this.radio.setAm();
     }
 
-    public void TurnOff(){
+    public void TurnOff() {
         this.radio.off();
         this.microphone.off();
         this.headPhones.VolumeDown(10);

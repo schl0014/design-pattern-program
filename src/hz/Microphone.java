@@ -1,14 +1,15 @@
 public class Microphone {
 
-    public void on(){
+    public void on() {
         System.out.println("Microphone is on");
     }
-    public void off(){
+
+    public void off() {
         System.out.println("Microphone is off");
     }
 
-    public void sensitvity(int sensitivity){
-        System.out.println("Sensitvity has changes by"+sensitivity);
+    public void sensitvity(int sensitivity) {
+        System.out.println("Sensitvity has changes by" + sensitivity);
     }
 
 }
