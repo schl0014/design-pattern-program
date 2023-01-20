@@ -5,12 +5,12 @@ public class Mouse {
 
     MouseState state;
 
-    int count = 100;
+    int BatteryPercentage = 100;
 
     public Mouse(int MouseBatteryNumber){
         HasBattery = new HasBattery(this);
         HasNoBattery = new HasNoBattery(this);
-        this.count = MouseBatteryNumber;
+        this.BatteryPercentage = MouseBatteryNumber;
         MouseBatteryNumber--;
         if (MouseBatteryNumber > 0) {
             state = HasBattery;
@@ -26,8 +26,8 @@ public class Mouse {
 //            setState(HasNoBattery);
 //        }
 //    }
-    public int getCount() {
-        return count;
+    public int getBatteryPercentage() {
+        return BatteryPercentage;
     }
 
 
