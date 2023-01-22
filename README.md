@@ -23,3 +23,5 @@ De behavioral patterns: State
 
 # Samenwerking
 Wij hebben heel het project pairprogramming gebruikt. Daardoor is de samenstelling gelijk aan elkaar. Pairprogramming deden we in de vorm van het ene moment ging ene persoon typen en andere meekijken en ideeën bedenken en om de zoveel tijd verwisselde wij van rol.
+
+https://github.com/schl0014/design-pattern-program/
